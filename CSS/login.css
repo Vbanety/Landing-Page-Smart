@@ -1,0 +1,373 @@
+
+/*
+body::after {
+  content: "";
+  position: absolute;
+  background-color: #f0f0f5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 16rem;
+  z-index: -1;
+} */
+/* //////////////////////Estilizando o layout da pagina login //////////////////////////////// */
+
+html {
+  margin: 0;
+}
+
+body {
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #e6e6e6;
+  color: #276CDA;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none; 
+}
+
+.logo-header {
+  width: 100%;
+  height: 140px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px #606060;
+}
+
+.backForm {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+#form-body {
+  width: 420px;
+  height: 100%;
+  margin: 10px auto 0 auto;
+  align-items: center;
+}
+
+#form-body h1{
+ text-align: center;
+ padding: 20px;
+}
+
+.login-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 380px;
+  margin: 10px;
+  padding: 5px;
+  color: #fff;
+  background-color: rgb(197, 73, 73, 0.9);
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  font-size: 16pt;
+}
+
+input {
+  display: block;
+  height: 55px;
+  width: 350px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  font-size: 16pt;
+  padding: 10px 20px; 
+  background-color: rgba(255,255,255, 0.05); 
+  color: #000000;
+  outline: none;
+}
+
+input[type=submit] {
+  background-color: #276CDA;
+  height: 55px;
+  width: 390px;
+  margin: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16pt;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+a {
+  color: #276CDA;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  font-size: 16pt;
+  padding: 10px 20px;
+  display: block;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::-web-input-placeholder {
+  color: #fff;
+}
+::-moz-placeholder {
+  color: #fff;
+}
+::-moz-placeholder {
+  color: #fff;
+}
+::-ms-input-placeholder {
+  color: #fff;
+}
+
+/* ////////////////// 600px maximo /////////////////////// */
+
+@media(max-width: 600px) {
+
+  body{
+    height: auto;
+  }
+  .login-main {
+    margin: 20px;
+    height: 1800px;
+  }
+
+  .logo-header {
+    border-radius: 0%;
+    margin-bottom: 0;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+  }
+
+  .logo-header img {
+    width: 100%;
+  }
+
+  div#form-body {
+    width: 100%;
+    height: 100%;
+    margin: 10px 0px;
+  }
+
+  div#form-body h1 {
+    font-size: 40pt;
+    letter-spacing: 15px;
+  }
+
+  .backForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input {
+    width: 800px;
+    height: 100px;
+    margin: 50px 30px;
+    font-size: 30pt;
+  }
+
+  input[type=submit] {
+    width: 840px;
+    height: 100px;
+    margin: 50px 30px;
+    font-size: 30pt;
+  }
+}
+/* //////////////////RENDERIZAÇÃO 320PX ////////////////////////// */
+
+
+@media(max-width: 480px) {
+
+  .login-main {
+    margin: 20px;
+    height: 1200px;
+  }
+
+  .logo-header {
+    border-radius: 0%;
+    margin-bottom: 0;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+#form-body h1 {
+  text-align: center;
+  padding: 10px 0 0 0;
+  font-size: 70pt;
+  margin: 0;
+}
+
+
+.logo-header img {
+  border-radius: 0%;
+  width: 85% !important;
+  height: auto !important;
+}
+
+  .backForm {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+form {
+  height: 100%;
+}
+
+div#form-body {
+  width: 100%;
+  height: 1200px;
+  margin: 10px auto 0 auto;
+  align-items: center;
+}
+
+div#form-body form {
+  width: 100%;
+  height: 100%;
+  margin: 10px auto 0 auto;
+  align-items: center;
+}
+
+input {
+  display: block;
+  height: 15%;
+  width: 95%;
+  margin: 50px 0;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  font-size: 60pt;
+  padding: 10px 20px;
+  background-color: rgba(255,255,255, 0.05);
+  color: #000000;
+  outline: none;
+}
+
+input[type=submit] {
+  background-color: #276CDA;
+  height: 15%;
+  width: 98%;
+  margin: 20px 0;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 80pt;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.home {
+  height: 10%;
+  margin: 40px 0;
+}
+
+.home a img {
+  height: 140px;
+}
+
+}
+
+
+/* //////////////////RENDERIZAÇÃO 320PX a 480px////////////////////////// */
+
+@media(max-width: 320px) {
+
+  .login-main {
+    margin: 10px;
+    height: 1200px;
+  }
+
+  .logo-header {
+    border-radius: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 350px;
+}
+
+#form-body h1 {
+  text-align: center;
+  padding: 10px 0 0 0;
+  font-size: 70pt;
+  margin: 0;
+}
+
+
+.logo-header img {
+  border-radius: 0%;
+  width: 85%;
+  height: 80%;
+  padding-top: 30px;
+}
+
+  .backForm {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+form {
+  height: 100%;
+}
+
+div#form-body {
+  width: 100%;
+  height: 1200px;
+  margin: 10px auto 0 auto;
+  align-items: center;
+}
+
+div#form-body form {
+  width: 100%;
+  height: 100%;
+  margin: 10px auto 0 auto;
+  align-items: center;
+}
+
+input {
+  display: block;
+  height: 20%;
+  width: 95%;
+  margin: 50px 0;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  font-size: 80pt;
+  padding: 10px 20px;
+  background-color: rgba(255,255,255, 0.05);
+  color: #000000;
+  outline: none;
+}
+
+input[type=submit] {
+  background-color: #276CDA;
+  height: 20%;
+  width: 98%;
+  margin: 20px 0;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 80pt;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.home {
+  height: 10%;
+}
+
+.home a img {
+  height: 140px;
+}
+
+}
+

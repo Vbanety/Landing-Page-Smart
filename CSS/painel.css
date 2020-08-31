@@ -1,0 +1,219 @@
+
+
+body {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e6e6;
+}
+
+.login-main {
+    margin: 10px;
+    background-color: #620584;
+}
+
+#back-form {
+    background-color: #fff;
+}
+
+.logo-header {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 2px 2px 4px #606060;
+  }
+
+header {
+    background-color:#fff;
+}
+
+.container1 {
+    display: flex;
+    border: 1px solid #666666;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #606060;
+    background-color: black;
+}
+
+.item1 {
+    width: 80%;
+    text-align: center;
+    color: #fff;
+}
+
+.item2 {
+    position: relative;
+    width: 20%;
+    border-left: 1px solid;
+    text-align: center;
+}
+
+.item2 a {
+    position: relative;
+    top: 30%;
+    border: 1px solid;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #276CDA;
+    box-shadow: 2px 2px 4px #606060;
+    color: #ffffff;
+}
+
+.item2 a:hover {
+    background-color: rgba(255,0,0,.3);
+    transition: 1s;
+}
+
+
+.div-form {
+    display: flex;
+    justify-content: space-between;
+    align-itens: center;
+    height: 40px;                
+}
+
+.b-label {
+    margin: 0;
+    padding-top: 5px;
+    height: 35px;
+    width: 800px;
+    background-color: #276CDA;
+    font-size: 20pt;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #606060;
+
+}
+
+.bem-vindo {
+    background-color: #276CDA;
+    font-size: 25pt;
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #606060;
+}
+
+.input-button {
+    height: 40px;
+    width: 120px;
+    background-color: #000000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #606060;
+    padding: 10px;
+}    
+
+@media(max-width: 600px){
+
+    .body-panel {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .logo-header {
+        height: auto;
+    }
+
+    .logo-header img {
+        height: 180px;
+    }
+
+    div#back-panel {
+        margin: 30px 0;
+    }
+
+    .bem-vindo {
+        height: 50px;
+        font-size: 30pt;
+        padding: 10px;
+    }
+
+    .container1 {
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+
+    form.consultaDados {
+        margin-top: -20px;
+    }
+}
+
+/* /////////////////max 320px///////////////// */
+
+@media(max-width: 320px) {
+    .body-panel {
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%;
+    } 
+    
+    .logo-header {
+        width: auto;
+        height: auto;
+    }
+
+    .logo-header img {
+        height: 230px;
+    }
+
+    .bem-vindo {
+        height: auto;
+        font-size: 45pt;
+        padding: 10px;
+    }
+
+    .container1 {
+        height: 300px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+
+    .item1 {
+        width: auto;
+        font-size: 25px;
+    }
+
+    .item2 {
+        width: 100%;
+        height: auto;
+        margin: 25px 0;
+    }
+
+    .item2 a {
+        width: 80%;
+        font-size: 40pt;
+        margin: 25px 0;
+        padding: 10px auto;
+    }
+    
+    form.consultaDados {
+        margin-top: -20px;
+        height: 100px;
+    }
+
+    .div-form {
+        height: 120px;
+    }
+
+}
+
+

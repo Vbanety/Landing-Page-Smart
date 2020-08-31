@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+
+    <title>Smart TV LED Promoções</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.formulario').submit(function () {
+                $.ajax({
+                    url: './php/envia.php',
+                    type: 'POST',
+                    data: $('.formulario').serialize(),
+                    success: function (data) {
+                        if (data != '') {
+                            $('.recebeDados').html(data);
+                        } else {
+                            alert('Existem campos em branco!');
+                        }
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+</head>
+
+
+<body>
+    
+    <section class="web-main">
+        <div class="logo-header">
+            <img src="./image/fundo-header-login1.jpg"> 
+        </div>
+    
+        <header class="container1">
+    
+            <div class="item1">
+                <h1>Promoções imperdíveis de SMART TV LED</h1>
+            </div>
+            <div class="item2">
+                <a href="./php/index-login.php">Login</a>
+            </div>
+    
+        </header>
+        <main>
+            <ul class="container2">
+                <li><img src="./image/tv-1.png" alt="Tv Sansung one"><span>TV LED Sansung XPconect 52" De: R$1599,00 por:
+                        <strong>R$999,00</strong></span></li>
+                <li><img src="./image/tv-2.png" alt="Tv Sansung two"><span>TV LED Sansung DAconect 39" De: R$1199,00 por:
+                        <strong>R$799,00</strong></span></li>
+                <li><img src="./image/tv-3.png" alt="Tv Sansung three"><span>TV LED Sansung LPconect 62" De: R$2599,00 por:
+                        <strong>R$2099,00</strong></span></li>
+                <li><img src="./image/tv-4.png" alt="Tv Sansung four"><span>TV LED Sansung LPXconect 41" De: R$1299,00 por:
+                        <strong>R$1099,00</strong></span></li>
+                <li><img src="./image/tv-5.png" alt="Tv Sansung five"><span>TV LED Sansung XPconect 43" De: R$1599,00 por:
+                        <strong>R$999,00</strong></span></li>
+                <li><img src="./image/tv-6.png" alt="Tv Sansung six"><span>TV LED Sansung XPAway 41" De: R$1599,00 por:
+                        <strong>R$999,00</strong></span></li>
+            </ul>
+        </main>
+    
+        <div class="cadastro">
+            <h2>Aproveite para cadastrar seu email e receber as nossas melhores promoções. Segue formulário de cadastro logo
+                a baixo.</h2>
+        </div>
+    
+        <form class="formulario" method="post" action="">
+            <fieldset class="field-group">
+                <legend>Efetue o cadastro</legend>
+                <div class="input1">
+                    <input type="text" name="firstname" id="firstN" placeholder="Insera seu Nome" required>
+                    <input type="text" name="lastname" id="lastN" placeholder="Insera seu sobrenome" required>
+                </div>
+    
+                <div class="input2">
+                    <input type="text" name="email" id="email" placeholder="Insira seu melhor email" required>
+                    <textarea 
+                      type="text" 
+                      name="dubit" 
+                      id="dubit" 
+                      placeholder="Deixe sua dúvida." 
+                      rows="10" cols="66"></textarea>
+                </div>            
+            </fieldset>
+            <input type="submit" id="botao">
+        </form>
+        
+        <div class="recebeDados"></div>
+    
+        <div class="cadastro">
+            <h2>Em breve você receberá mais informações detalhadas de nossos produtos e irá concorrer a premios, fique atento com sua caixa de mensagens.</h2>
+        </div>
+    
+    </section>
+        
+</body>
+</html>
