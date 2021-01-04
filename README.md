@@ -39,4 +39,4 @@ change the files conexao.php, conexao.php, consulta.php requested the user and c
 
 Detail: I was unable to export the php banks to eliminate steps 5 and 6 mentioned above.
 
-Obs: You can see here the previews of how that's working click [here](http://vbanety.ddns.net/smart/).
+Obs: You can see here the previews of how that's working click [here](https://vbanety.github.io/Landing-Page-Smart/).
